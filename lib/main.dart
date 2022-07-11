@@ -20,6 +20,9 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (context) => Cart(),
         ),
+        // ChangeNotifierProvider(
+        //   create: (_) => Orders(),
+        // ),
       ],
       child: MaterialApp(
           title: 'MyShop',
@@ -31,6 +34,8 @@ class MyApp extends StatelessWidget {
           home: ProductsOverviewScreen(),
           routes: {
             ProductDetailScreen.routeName: (ctx) => ProductDetailScreen(),
+            // CartScreen.routeName: (ctx) => CartScreen(),
+            // OrdersScreen.routeName: (ctx) => OrdersScreen(),
           }),
     );
   }
